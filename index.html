@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1><a href="index.html">WEB</a></h1>
+    <p>
+    <script>
+      var body = document.querySelector('body');
+      function ChangeAColorToWhite(){
+        var a = document.querySelectorAll('a');
+        var i = 0;
+        while(i < a.length){
+          a[i].style.color = 'white';
+          i++;
+        }
+      }
+      function ChangeAColor(color){
+        var a = document.querySelectorAll('a');
+        var i = 0;
+        while(i < a.length){
+          a[i].style.color = color;
+          i++;
+        }
+      }
+    </script>
+    <input type="button" value="night" onclick="
+      if(this.value === 'night'){
+        body.style.background = 'black';
+        body.style.color = 'white';
+        this.value = 'day';
+        ChangeAColor('white');
+      } else {
+        body.style.background = 'white';
+        body.style.color = 'black';
+        this.value = 'night';
+        ChangeAColor('black');
+      }
+    ">
+    </p>
+    <ul>
+      <li><a href="1.html">html</a></li>
+      <li><a href="2.html">css</a></li>
+      <li><a href="3.html">javascript</a></li>
+    </ul>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </body>
+</html>
